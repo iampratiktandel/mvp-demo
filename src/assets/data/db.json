@@ -2,17 +2,17 @@
   "students": [
     {
       "id": 1,
-      "name": "Pratik",
+      "name": "Pratik Tandel",
       "age": 22
     },
     {
       "id": 2,
-      "name": "Ali",
+      "name": "Ali Kapadia",
       "age": 24
     },
     {
       "id": 3,
-      "name": "Umang",
+      "name": "Umang Tandel",
       "age": 21
     }
   ]
