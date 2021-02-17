@@ -1,1 +1,24 @@
-<p>student-list-presentation works!</p>
+<div class="container">
+  <h2 class="text-center">Student List</h2>
+  <table class="table table-striped border border-secondary">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Options</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let studentListItem of studentList">
+        <td>{{studentListItem.id}}</td>
+        <td>{{studentListItem.name}}</td>
+        <td>{{studentListItem.age}}</td>
+        <td>
+          <button class="mx-4">Edit</button>
+          <button>Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
