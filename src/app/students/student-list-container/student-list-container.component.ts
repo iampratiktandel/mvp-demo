@@ -18,4 +18,8 @@ export class StudentListContainerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public onDeleteId(id: number) {
+    this.studentsService.deleteStudent(id)
+  }
+
 }

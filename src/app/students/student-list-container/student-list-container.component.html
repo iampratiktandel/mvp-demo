@@ -1,1 +1,1 @@
-<app-student-list-presentation [studentList]="studentList$ | async"></app-student-list-presentation>
+<app-student-list-presentation [studentList]="studentList$ | async" (deleteId)="onDeleteId($event)"></app-student-list-presentation>

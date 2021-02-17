@@ -13,4 +13,8 @@ export class StudentsService {
   public getStudents(): Observable<Student[]> {
     return this.http.get<Student[]>('http://localhost:3000/students')
   }
+
+  public deleteStudent(id: number): Observable<any> {
+    return of(true)
+  }
 }

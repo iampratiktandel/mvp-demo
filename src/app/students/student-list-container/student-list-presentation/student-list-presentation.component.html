@@ -15,8 +15,7 @@
         <td>{{studentListItem.name}}</td>
         <td>{{studentListItem.age}}</td>
         <td>
-          <button class="mx-4">Edit</button>
-          <button>Delete</button>
+          <button (click)="deleteStudent(studentListItem.id)">Delete</button>
         </td>
       </tr>
     </tbody>
