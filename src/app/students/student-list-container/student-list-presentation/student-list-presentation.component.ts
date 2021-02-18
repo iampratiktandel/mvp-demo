@@ -6,7 +6,8 @@ import { StudentListPresenterService } from '../student-list-presenter/student-l
   selector: 'app-student-list-presentation',
   templateUrl: './student-list-presentation.component.html',
   styleUrls: ['./student-list-presentation.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  viewProviders: [StudentListPresenterService]
 })
 export class StudentListPresentationComponent implements OnInit {
 

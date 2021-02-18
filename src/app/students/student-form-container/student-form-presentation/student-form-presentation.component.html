@@ -1,1 +1,37 @@
-<p>student-form-presentation works!</p>
+<div class="container border border-dark p-3">
+  <!-- <p class="text-center"> Form Status: {{ studentForm.status }} </p> -->
+  
+  <form class="col-lg-6 mx-auto" [formGroup]="studentForm" (ngSubmit)="studentDetails()">
+    <div class="mb-3">
+      <label for="studentName">Student Name</label> 
+      <input type="text" id="name" class="form-control" formControlName="name">
+      <!-- Display error -->
+      <!-- <div *ngIf="studentForm.name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+        <div *ngIf="name.errors.required">
+          Name is required.
+        </div>
+        <div *ngIf="name.errors.minlength">
+          Name must be at least 4 characters long.
+        </div>
+      </div> -->
+      <!-- /Display error -->
+    </div>
+
+    <div class="mb-3">
+      <label>Age</label>
+      <input type="number" class="form-control" formControlName="age">
+      <!-- Display error -->
+      <!-- <div *ngIf="age.invalid && (age.dirty || age.touched)" class="alert alert-danger">
+        <div *ngIf="age.errors.required">
+          Age is required.
+        </div>
+      </div> -->
+      <!-- /Display error -->
+    </div>
+    
+    <!-- <button type="submit" class="btn btn-primary" [disabled]="studentForm.valid">Submit</button> -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button routerLink="../" class="btn btn-secondary mx-3">Back</button>
+  </form>
+</div>

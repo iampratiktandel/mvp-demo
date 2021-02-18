@@ -1,19 +1,9 @@
 {
   "students": [
     {
-      "id": 1,
       "name": "Pratik Tandel",
-      "age": 22
-    },
-    {
-      "id": 2,
-      "name": "Ali Kapadia",
-      "age": 24
-    },
-    {
-      "id": 3,
-      "name": "Umang Tandel",
-      "age": 21
+      "age": 22,
+      "id": 1
     }
   ]
 }
