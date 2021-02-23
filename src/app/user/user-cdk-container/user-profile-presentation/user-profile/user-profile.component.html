@@ -1,0 +1,14 @@
+<div>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit(userForm)">
+    <mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email">
+    </mat-form-field>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
