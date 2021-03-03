@@ -50,6 +50,7 @@ export class UserProfilePresenterService {
     const overlayRef = this.overlay.create(overlayConfig);
     const portal: ComponentPortal<UserProfileComponent> = new ComponentPortal<UserProfileComponent>(UserProfileComponent);
     const componentRef: ComponentRef<UserProfileComponent> = overlayRef.attach(portal);
+    componentRef.instance.userForm
 
     overlayRef.backdropClick().subscribe(() => overlayRef.detach());
 
